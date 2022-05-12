@@ -1,5 +1,5 @@
-create database bai_tap;
-use bai_tap;
+create database create_table;
+use create_table;
 CREATE TABLE class (
     id INT,
     `name` VARCHAR(50)
