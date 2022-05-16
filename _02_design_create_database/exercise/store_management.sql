@@ -10,20 +10,20 @@ create table `order`(
 order_id int primary key,
 customer_id int,
 order_date date,
-order_total_Price double,
+order_price double,
 foreign key(customer_id) references customer(customer_id)
 );
 
 create table product(
 product_id int primary key,
 product_name varchar(20),
-product_price double
+product_price int
 );
 
 create table order_product(
 order_id int,
 product_id int,
-order_qty varchar(20),
+order_qty int,
 primary key(order_id,product_id),
 foreign key(order_id) references `order`(order_id),
 foreign key(product_id) references product(product_id)
