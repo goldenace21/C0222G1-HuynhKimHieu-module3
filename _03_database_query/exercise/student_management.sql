@@ -61,7 +61,8 @@ CREATE TABLE Mark (
 INSERT INTO Mark (SubId, StudentId, Mark, ExamTimes)
 VALUES (1, 1, 8, 1),
        (1, 2, 10, 2),
-       (2, 1, 12, 1);
+       (2, 3, 12, 1),
+       (2, 2, 12, 1);
 
 select * from Student where StudentName like "h%";
 

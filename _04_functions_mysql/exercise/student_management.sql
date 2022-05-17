@@ -61,11 +61,11 @@ don_vi varchar(10),
 trang_thai varchar(45)
 );
 
-INSERT INTO dich_vu_di_kem (ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) 
+INSERT INTO dich_vu_di_kem (ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 VALUES (1,"chay bo",99.99,"vnd","true");
-INSERT INTO dich_vu_di_kem (ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) 
+INSERT INTO dich_vu_di_kem (ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 VALUES (2,"di boi",99.99,"vnd","false");
-INSERT INTO dich_vu_di_kem (ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) 
+INSERT INTO dich_vu_di_kem (ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 VALUES (3,"bida",99.99,"vnd","false");
 
 create table dich_vu(
@@ -84,11 +84,11 @@ foreign key(ma_kieu_thue) references kieu_thue(ma_kieu_thue),
 foreign key(ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu)
 );
 
-INSERT INTO dich_vu (ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,ma_loai_dich_vu,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang) 
+INSERT INTO dich_vu (ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,ma_loai_dich_vu,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang)
 VALUES (1,"chay bo",99.99,23.4,20,1,1,"vip","ho boi",9.5,3);
-INSERT INTO dich_vu (ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,ma_loai_dich_vu,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang) 
+INSERT INTO dich_vu (ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,ma_loai_dich_vu,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang)
 VALUES (2,"boi loi",3.99,3.4,50,2,2,"normal","ho boi",4.5,4);
-INSERT INTO dich_vu (ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,ma_loai_dich_vu,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang) 
+INSERT INTO dich_vu (ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,ma_loai_dich_vu,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang)
 VALUES (3,"bida",3.99,3.4,50,3,3,"normal","ho boi",4.5,4);
 
 create table nhan_vien(
