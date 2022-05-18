@@ -6,7 +6,7 @@ where (ho_ten like 'H%' or ho_ten like 'T%' or ho_ten like 'K%')
 and length(ho_ten) <= 15;
 
 -- -------- task 3 ----------
-
+use furama_management;
 select *
 from khach_hang
 where 
@@ -67,6 +67,8 @@ select distinct ho_ten from khach_hang;
 
 select ho_ten from khach_hang group by ho_ten;
 
+select ho_ten from khach_hang union select ho_ten from khach_hang;
+
 -- -------- task 9 ----------
 
 select month(hd.ngay_lam_hop_dong) thang, count(month(hd.ngay_lam_hop_dong)) so_lan 
@@ -106,8 +108,10 @@ join nhan_vien nv on nv.ma_nhan_vien = hd.ma_nhan_vien
 join khach_hang kh on kh.ma_khach_hang = hd.ma_khach_hang
 join dich_vu dv on dv.ma_dich_vu = hd.ma_dich_vu
 join hop_dong_chi_tiet hdct on hdct.ma_hop_dong = hd.ma_hop_dong
-where hd.ma_khach_hang in (select hd.ma_khach_hang from hop_dong hd where month(hd.ngay_lam_hop_dong) > 9 and year(hd.ngay_lam_hop_dong) = 2020) and
-hd.ma_khach_hang not in (select hd.ma_khach_hang from hop_dong hd where month(hd.ngay_lam_hop_dong) < 7 and year(hd.ngay_lam_hop_dong) = 2021);
+where hd.ma_khach_hang in (select hd.ma_khach_hang from hop_dong hd 
+where month(hd.ngay_lam_hop_dong) > 9 and year(hd.ngay_lam_hop_dong) = 2020) and
+hd.ma_khach_hang not in (select hd.ma_khach_hang from hop_dong hd 
+where month(hd.ngay_lam_hop_dong) < 7 and year(hd.ngay_lam_hop_dong) = 2021);
 
 -- -------- task 13 ----------
 
