@@ -119,6 +119,10 @@ VALUES(1,'năm'),(2,'tháng'),(3,'ngày'),(4,'giờ');
 INSERT INTO loai_dich_vu (ma_loai_dich_vu,ten_loai_dich_vu)
 VALUES(1,'Villa'),(2,'House'),(3,'Room');
 
+create table xoa_hop_dong(
+so_hop_dong int
+);
+
 insert into khach_hang(ma_khach_hang,ho_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi,ma_loai_khach)
 values
 (1,"Nguyễn Thị Hào","1970-11-07",0,"643431213","0945423362","thihao07@gmail.com","Đà Nẵng",5),

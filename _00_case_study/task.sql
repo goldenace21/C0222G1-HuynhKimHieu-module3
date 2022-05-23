@@ -3,7 +3,7 @@
 select * 
 from nhan_vien
 where (ho_ten like 'H%' or ho_ten like 'T%' or ho_ten like 'K%') 
-and length(ho_ten) <= 15;
+and char_length(ho_ten) <= 15;
 
 -- -------- task 3 ----------
 use furama_management;
@@ -196,7 +196,7 @@ as select * from nhan_vien nv
 where  ma_nhan_vien in 
 (select hd.ma_nhan_vien 
 from hop_dong hd 
-where year(hd.ngay_lam_hop_dong) = 2021) and nv.dia_chi like "%da nang";
+where year(hd.ngay_lam_hop_dong) = 2021) and nv.dia_chi like "%da nang" or nv.dia_chi like "%jaan";
 
 -- -------- task 22 ----------
 
@@ -250,7 +250,12 @@ create trigger tr_xoa_hop_dong
 after delete on hop_dong
 for each row
 begin
-	
-end; //
+	insert into xoa_hop_dong select count(*) from hop_dong;
+end; $$
 delimiter ;
+
+drop trigger tr_xoa_hop_dong;
+
+delete from hop_dong where ma_hop_dong = 1;
+
 

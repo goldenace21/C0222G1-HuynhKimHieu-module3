@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    display: block;
+    height: 100em;
+    margin: 0;
+}
+
+.overview {
+
+}
+
+header {
+    top: 0;
+    display: block;
+    height: 4.75em;
+    background-image: linear-gradient(rgb(21, 21, 21) , rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header_content {
+    position: relative;
+    width: 90%;
+    top: 0;
+    height: 4.75em;
+    z-index: 2;
+    margin: auto;
+    
+}
+
+.pop_icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2.5em;
+    left: 2em;
+    cursor: pointer;
+}
+
+.pop_icon:hover {
+  opacity: .8;
+  transition: .3s;
+
+}
+
+.pop_avatar{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2.5em;
+    right: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header_navbar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav {
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2.5em;
+
+}
+.nav span a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.nav span a:hover{
+    color: #ea6016;
+    transition: .3s;
+}
+
+.nav span:nth-child(2) a{
+    color: #ea6016;
+}
+
+
+.search_box {
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20em;
+    height: 3em;
+    border-radius: 3.125em;
+    background-color:rgb(64, 64, 64); opacity:0.5;
+    left: 45em;
+    cursor: text;
+}
+
+.login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4.8em;
+    color: #fff;
+    font-size: 19.2px;
+    text-align: center;
+}
+
+.login span {
+    padding: 0.25em 1.1em;
+    background-color: #ea6016;
+    border-radius: 3.125em;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px 2px;
+    cursor: pointer;
+    
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login a:first-child span {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid rgb(235, 97, 23);
+    color: #ea6016;
+}
+
+.login a span:hover {
+    box-shadow: 0 0 6px rgba(235, 97, 23,1);
+    transition: .3s;
+}
+
+.content_body {
+    position: relative;
+    width: 90%;
+    top: 0;
+    margin: auto;
+}
+
+.background_img {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.background_back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 30%,rgb(0, 0, 0) 48%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.click_now {
+}
+
+.click_now span {
+    position: absolute;
+    z-index: 3;
+    height: 2.4em;
+    width: 10em;
+    background-image: linear-gradient(to left, rgb(255, 89, 0) , rgb(255, 153, 0));
+    border-radius: .2em;
+    top: 12em;
+    left: 2em;
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4em;
+    cursor: pointer;
+}
+
+.click_now span:hover {
+    background-image: linear-gradient(to right, rgb(255, 89, 0) , rgb(255, 153, 0));
+    box-shadow: 0 0 .5em rgb(255, 89, 0);
+    transition: .3s;
+}
+
+.quick_list {
+    list-style: none;
+    position: absolute;
+    top: 26em;
+    right: 1em;
+    z-index: 4;
+}
+
+.quick_list li {
+    position: relative;
+    display: inline-block;
+    height: 3em;
+    width: 3em;
+    overflow: hidden;
+    border-radius: .4em;
+    margin-right: 1em;
+}
+
+.quick_list li img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    cursor: pointer;
+    box-shadow: 0 0 .5em rgb(0, 0, 0);
+}
+
+.quick_list li img:hover {
+    opacity: .5;
+    transition: .3s;
+}
+
+.title_list {
+    position: relative;
+    top: 35em;
+    display: block;
+    cursor: pointer;
+
+}
+
+.title_list p {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-size:2.25em;
+    font-weight: 600;
+    margin-left: 1em;
+}
+
+.title_decor {
+    position: absolute;
+    background-image: linear-gradient( rgb(255, 89, 0) , rgb(255, 153, 0));
+    height: 3em;
+    width: .6em;
+    z-index: 4;
+    border-radius: 25px;
+}
+.list_comic {
+    position: absolute;
+    margin-top:43em;
+}
+
+.list_comic ul {
+    list-style: none;
+    
+}
+
+.list_comic li {
+    height: 15.9375em;
+    width: 10em;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-right: .6em;
+    border-radius: 4px;
+    left: 2em
+}
+
+.list_comic li img {
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.list_comic li:hover {
+    opacity: .6;
+transition: .3s;
+}
