@@ -12,17 +12,21 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String descripton = request.getParameter("description");
-        float price = Float.parseFloat(request.getParameter("price"));
-        int discount_percent = Integer.parseInt(request.getParameter("discount"));
-        float discount = (float) (price * discount_percent *0.1);
-        float total = price - discount;
+        try {
+            String descripton = request.getParameter("description");
+            float price = Float.parseFloat(request.getParameter("price"));
+            int discountPercent = Integer.parseInt(request.getParameter("discount"));
+            float discount = (float) (price * discountPercent *0.1);
+            float total = price - discount;
+            request.setAttribute("descripton", descripton);
+            request.setAttribute("price", price);
+            request.setAttribute("discount_percent", discountPercent);
+            request.setAttribute("discount", discount);
+            request.setAttribute("total", total);
+            request.getRequestDispatcher("result.jsp").forward(request, response);
+        } catch (Exception e) {
+            request.getRequestDispatcher("exception.jsp").forward(request, response);
+        }
 
-        request.setAttribute("descripton", descripton);
-        request.setAttribute("price", price);
-        request.setAttribute("discount_percent", discount_percent);
-        request.setAttribute("discount", discount);
-        request.setAttribute("total", total);
-        request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 }

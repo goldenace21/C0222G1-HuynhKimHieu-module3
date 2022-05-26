@@ -11,10 +11,10 @@
     <title>Result</title>
 </head>
 <body>
-<h1> Product Description <%=descripton%></h1>
-<h1> Product Price <%=price%></h1>
-<h1> Product Discount percent <%=discount_percent%></h1>
-<h1> Product Discount <%=discount%></h1>
-<h1> Product Total <%=total%></h1>
+<h1> Product Description ${descripton}</h1>
+<h1> Product Price ${price}</h1>
+<h1> Product Discount percent ${discount_percent}</h1>
+<h1> Product Discount ${discount}</h1>
+<h1> Product Total ${total}</h1>
 </body>
 </html>
