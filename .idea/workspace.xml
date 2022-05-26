@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45c400c8-0871-45bd-8811-f50fc60333ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_07_layout_website/exercise/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/_07_layout_website/exercise/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/bootstrap-4.6.1-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_08_bootstrap_basic/exercise/microsoft/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +42,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -85,6 +65,7 @@
       <workItem from="1653451825150" duration="600000" />
       <workItem from="1653460118361" duration="463000" />
       <workItem from="1653462457546" duration="6092000" />
+      <workItem from="1653482147337" duration="1276000" />
     </task>
     <servers />
   </component>
