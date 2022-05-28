@@ -6,7 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 <head>
     <title>$Title$</title>
@@ -37,7 +36,6 @@
                 <div class="form-group">
                     <label> Enter number: </label>
                     <input name="number1" class="form-control" type="number" placeholder="Enter number 1" value="${number1}" required>
-
                 </div>
                 <div class="form-group">
                     <select class="form-control" name="operator">
@@ -54,35 +52,9 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <p>result : ${result}</p>
             </form>
-
-
         </div>
-
     </div>
 </div>
-
-<%--      <div class="col-md-4">--%>
-<%--        <form action="/index" method="get">--%>
-<%--          <div class="mb-3">--%>
-<%--            <label class="form-label">Enter numer: </label>--%>
-<%--            <input name="number1" type="number" placeholder="Enter number 1" value="${number1}" required>--%>
-<%--          </div>--%>
-<%--          <div class="mb-3">--%>
-<%--            <select class="form-control" name="operator">--%>
-<%--              <option>addition</option>--%>
-<%--              <option>subtraction</option>--%>
-<%--              <option>multiplication</option>--%>
-<%--              <option>division</option>--%>
-<%--            </select>--%>
-<%--          </div>--%>
-<%--          <div class="mb-3">--%>
-<%--            <label class="form-label">Enter number</label>--%>
-<%--            <input name="number2" type="number" placeholder="Enter number 2" value="${number2}" required>--%>
-<%--          </div>--%>
-<%--          <button type="submit" class="btn btn-primary">Submit</button>--%>
-<%--        </form>--%>
-<%--      </div>--%>
-
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

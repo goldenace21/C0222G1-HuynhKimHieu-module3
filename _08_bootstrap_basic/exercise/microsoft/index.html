@@ -17,8 +17,7 @@
       margin: 0;
     }
 
-    body {
-    }
+    body {}
 
     header {
       height: 3rem;
@@ -28,14 +27,33 @@
     a {
       color: #000;
     }
+
+    @media (min-width: 576px) {
+      .sm-center {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (min-width: 992px) {
+
+    }
+
+    @media (min-width: 1200px) {
+
+    }
   </style>
 </head>
 
 <body>
   <header style="padding:0; margin:0;" class="row">
-    <nav style="padding:0;" class="navbar navbar-expand-lg bg-light col-md-10">
-      <div style="justify-content: space-between;" class="collapse navbar-collapse col-md-12" id="navbarTogglerDemo02">
-        <div clas="col-md-6">
+    <nav style="padding:0;" class="navbar navbar-expand-lg bg-light col-lg-10">
+      <div style="justify-content: space-between;" class="collapse navbar-collapse col-lg-12" id="navbarTogglerDemo02">
+        <div clas="col-lg-6">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
@@ -64,7 +82,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <ul style="justify-content: end;" class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -91,7 +109,6 @@
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
   </header>
@@ -103,8 +120,8 @@
         </p>
       </div>
       <div class="row" style="justify-content:center;">
-        <p style="text-align: center;" class="col-md-8">
-          At Surface, we’re committed to inclusive design, 
+        <p style="text-align: center;" class="col-lg-8">
+          At Surface, we’re committed to inclusive design,
           putting people at the center and developing hardware and
           accessories that empower everyone.
         </p>
@@ -112,58 +129,69 @@
     </div>
     <div>
       <div class="row">
-        <img class="w-100" src="https://c.s-microsoft.com/en-us/CMSImages/Surface_Home_Store_AccessibilityHero_Photo_V1.png?version=b0195066-cb63-17ee-eb1d-31a0bff45396" alt="">
+        <img class="w-100"
+          src="https://c.s-microsoft.com/en-us/CMSImages/Surface_Home_Store_AccessibilityHero_Photo_V1.png?version=b0195066-cb63-17ee-eb1d-31a0bff45396"
+          alt="">
       </div>
     </div>
-    <div class="container mt-5" >
+    <div class="container mt-5">
       <div style="align-items: center;" class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <span class="row">More choices than ever</span>
-          <span class="row">Check out the most diverse selection of Surface devices yet, built for all the ways you create, work, play, and connect.</span>
+          <span class="row">Check out the most diverse selection of Surface devices yet, built for all the ways you
+            create, work, play, and connect.</span>
         </div>
-        <div style="align-items: space-around;" class="col-md-8">
-         <div class="row">
-          <span>Compare devices</span>
-          <span>Help me choose</span>
-          <span>Deals</span>
-         </div>
-         <div class="row">
-          <span>Compare devices</span>
-          <span>Help me choose</span>
-          <span>Deals</span>
-         </div>
+        <div style="align-items: space-around;" class="col-lg-8">
+          <div class="row">
+            <span>Compare devices</span>
+            <span>Help me choose</span>
+            <span>Deals</span>
+          </div>
+          <div class="row">
+            <span>Compare devices</span>
+            <span>Help me choose</span>
+            <span>Deals</span>
+          </div>
         </div>
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row ">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
@@ -171,33 +199,41 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 my-3 col-sm-12 sm-center">
           <div class="card" style="width: 17rem;">
-            <img src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173" class="card-img-top" alt="...">
+            <img
+              src="https://c.s-microsoft.com/en-us/CMSImages/Surface_F21_DeviceFamily_DO2_V1.jpg?version=51b444e9-b150-fddc-e621-68cc29080173"
+              class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
@@ -206,8 +242,8 @@
       </div>
     </div>
   </div>
-  <footer style="background:#ccc;" class="row mt-5 mx-0">
-    <div class="col-md-4 my-5">
+  <footer style="background:#f8f9fa;" class="row mt-5 mx-0">
+    <div class="col-lg-4 my-5">
       <span class="row">What's new</span>
       <span class="row"><small>Surface Pro 8</small></span>
       <span class="row"><small>Surface Laptop Studio</small></span>
@@ -216,7 +252,7 @@
       <span class="row"><small>Surface Pro 7+</small></span>
       <span class="row"><small>HoloLens 2</small></span>
     </div>
-    <div class="col-md-4 my-5">
+    <div class="col-lg-4 my-5">
       <span class="row">What's new</span>
       <span class="row"><small>Surface Pro 8</small></span>
       <span class="row"><small>Surface Laptop Studio</small></span>
@@ -225,7 +261,7 @@
       <span class="row"><small>Surface Pro 7+</small></span>
       <span class="row"><small>HoloLens 2</small></span>
     </div>
-    <div class="col-md-4 my-5">
+    <div class="col-lg-4 my-5">
       <span class="row">What's new</span>
       <span class="row"><small>Surface Pro 8</small></span>
       <span class="row"><small>Surface Laptop Studio</small></span>
