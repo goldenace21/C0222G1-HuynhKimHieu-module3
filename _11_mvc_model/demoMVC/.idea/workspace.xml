@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3016db53-d7dd-4a37-b2ea-504f71f7a9c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../exercise/demo/src/main/webapp/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/demo/src/main/webapp/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/demo/src/main/webapp/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/bin/main/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/bin/main/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/build/classes/java/main/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/build/classes/java/main/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/build/classes/java/main/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/build/classes/java/main/dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/build/libs/demo-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/build/libs/demo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/src/main/java/controller/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/src/main/java/controller/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/src/main/java/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/src/main/java/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/demo/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/demo/src/main/webapp/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/apache-tomcat-9.0.63/webapps/ROOT/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29sHZoS7wSDK6NTRd89tMTW1BIl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3016db53-d7dd-4a37-b2ea-504f71f7a9c1" name="Changes" comment="" />
+      <created>1653894930855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653894930855</updated>
+      <workItem from="1653894931993" duration="89000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -9,11 +9,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>list student</title>
 </head>
 <body>
 
     <a href="/studentServlet?action=create">Create student</a>
+    <P style="color:green">${message}</P>
 
     <h3>List student</h3>
 
@@ -24,7 +25,7 @@
             <th>Birthday</th>
             <th colspan="2">Action</th>
         </tr>
-        <c:forEach var="student" items="${studentList}}">
+        <c:forEach var="student" items="${studentList}">
             <tr>
                 <td>${student.id}</td>
                 <td><a href="/studentServlet?action=detail&id=${student.id}">${student.name}</a></td>
