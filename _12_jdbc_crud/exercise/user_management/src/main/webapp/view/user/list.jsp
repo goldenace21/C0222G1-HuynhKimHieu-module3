@@ -27,18 +27,16 @@
             <th>Name</th>
             <th>Email</th>
             <th>Country</th>
-            <th>Actions</th>
+            <th colspan="2">Actions</th>
         </tr>
         <c:forEach var="user" items="${listUser}">
             <tr>
                 <td>${user.id}</td>
-                <td>${user.name}"</td>
-                <td>${user.email}"</td>
-                <td>${user.country}"</td>
-                <td>
-                    <a href="/users?action=edit&id=${user.id}">Edit</a>
-                    <a href="/users?action=delete&id=${user.id}">Delete</a>
-                </td>
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td>${user.country}</td>
+                <td><a href="/users?action=edit&id=${user.id}">Edit</a></td>
+                <td><a href="/users?action=delete&id=${user.id}">Delete</a></td>
             </tr>
         </c:forEach>
     </table>
