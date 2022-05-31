@@ -28,7 +28,7 @@ public class productServiceImpl implements IProductService {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(Integer id) {
 
     }
 }

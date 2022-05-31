@@ -9,5 +9,5 @@ public interface IProductService {
     List<Product> findAll();
     Product findByName(String name);
     Map<String,String> save(Product product);
-    void delete(int id);
+    void delete(Integer id);
 }
