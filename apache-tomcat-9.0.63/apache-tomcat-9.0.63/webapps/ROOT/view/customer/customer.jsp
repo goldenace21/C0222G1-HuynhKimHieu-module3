@@ -90,29 +90,25 @@
             <a href="/customer?action=create">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">create new</button>
             </a>
-            <div class="row form-group mx-5 ">
-                <div class="">
-                    <input type="text" name="name" placeholder="enter address" value="${name}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <form action="/customer" method="get">
+                <div class="row form-group mx-5 ">
+                    <div class="">
+                        <input type="hidden" name="action" value="search" >
+                        <input type="text" name="name" placeholder="enter name" value="${name}" class="form-control"
+                               id="exampleInputEmail1" aria-describedby="emailHelp">
 
-                </div>
-                <div class=" mx-3">
-                    <input type="text" name="address" placeholder="enter address" value="${address}" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class=" mx-3">
+                        <input type="text" name="address" placeholder="enter address" value="${address}"
+                               class="form-control" id="exampleInputPassword1">
 
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn btn-primary">search</button>
+                    </div>
                 </div>
-                <div class="">
-                    <button type="submit" class="btn btn-primary">search</button>
-                </div>
-            </div>
+            </form>
         </div>
-        <form action="/customer" method="get">
-<%--            <label>Search</label>--%>
-<%--            <input hidden name="action" value="search">--%>
-<%--            <input type="text" name="name" placeholder="enter name" value="${name}">--%>
-<%--            <input type="text" name="address" placeholder="enter address">--%>
-<%--            <input type="submit" placeholder="search">--%>
-
-        </form>
-
     </div>
 </div>
 <%--<table border="1px">--%>
