@@ -7,7 +7,6 @@
 <body>
     <div class="container-fluid px-0" >
         <div style="height: 2.5em; background: rgba(246,246,246,0.93); border-bottom: 2px solid #eeee;" class="w-100">
-
         </div>
         <div style="height: 8em; display: flex; align-items: center;" class="container">
             <div class="col-lg-3 ">
@@ -47,7 +46,7 @@
                             <a class="nav-link text-white" href="/customer">Customer</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link text-white" href="employee/employee.jsp">Employee</a>
+                            <a class="nav-link text-white" href="/employee">Employee</a>
                         </li>
                     </ul>
                 </div>

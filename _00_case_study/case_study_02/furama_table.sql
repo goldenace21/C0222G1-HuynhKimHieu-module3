@@ -2,83 +2,128 @@ CREATE DATABASE furama;
 USE furama;
 
 CREATE TABLE `position` (
-position_id INT NOT NULL PRIMARY KEY auto_increment,
-position_name VARCHAR(45)
+    position_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    position_name VARCHAR(45)
 );
+
+insert into position
+(position_name)
+values ('Quản lý'),
+       ('Nhân viên');
 
 CREATE TABLE education_degree (
-education_degree_id INT NOT NULL PRIMARY KEY auto_increment,
-education_degree_name VARCHAR(45)
+    education_degree_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    education_degree_name VARCHAR(45)
 );
+
+insert into education_degree
+(education_degree_name)
+values ('Trung Cấp'),
+       ('Cao Đẳng'),
+       ('Đại Học'),
+       ('Sau Đại Học');
 
 CREATE TABLE division (
-division_id INT NOT NULL PRIMARY KEY auto_increment,
-division_name VARCHAR(45)
+    division_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    division_name VARCHAR(45)
 );
 
-CREATE TABLE username(
-username VARCHAR(45) NOT NULL PRIMARY KEY,
-password VARCHAR(45)
+insert into division
+(division_name)
+values ('Sale-Marketing'),
+       ('Hành chính'),
+       ('Phục vụ'),
+       ('Quản lý') ;
+
+CREATE TABLE username (
+    username VARCHAR(45) NOT NULL PRIMARY KEY,
+    password VARCHAR(45)
 );
 
 insert into username value 
-("name1","123"),
-("name2","123"),
-("name3","123"),
-("name4","123"),
-("name5","123"),
-("name6","123"),
-("name7","123"),
-("name8","123"),
-("name9","123"),
-("name10","123");
+('name1','123'),
+('name2','123'),
+('name3','123'),
+('name4','123'),
+('name5','123'),
+('name6','123'),
+('name7','123'),
+('name8','123'),
+('name9','123'),
+('name10','123');
 
-CREATE TABLE `role`(
-role_id INT NOT NULL PRIMARY KEY auto_increment,
-role_name VARCHAR(45)
+CREATE TABLE `role` (
+    role_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    role_name VARCHAR(45)
 );
 
-CREATE TABLE user_role(
-role_id INT auto_increment,
-username VARCHAR(255),
-FOREIGN KEY(role_id) REFERENCES `role`(role_id) ON DELETE CASCADE,
-FOREIGN KEY(username) REFERENCES username(username) ON DELETE CASCADE
+CREATE TABLE user_role (
+    role_id INT AUTO_INCREMENT,
+    username VARCHAR(255),
+    FOREIGN KEY (role_id)REFERENCES `role` (role_id)ON DELETE CASCADE,
+    FOREIGN KEY (username) REFERENCES username (username) ON DELETE CASCADE
 );
 
-CREATE TABLE employee(
-employee_id INT NOT NULL PRIMARY KEY auto_increment,
-employee_name VARCHAR(45),
-employee_birthday DATE,
-employee_id_card VARCHAR(45),
-employee_salary DOUBLE,
-employee_phone VARCHAR(45),
-employee_email VARCHAR(45),
-employee_address VARCHAR(45),
-position_id INT,
-education_degree_id INT,
-division_id INT,
-username VARCHAR(255),
-FOREIGN KEY(position_id) REFERENCES `position`(position_id) ON DELETE CASCADE,
-FOREIGN KEY(education_degree_id) REFERENCES education_degree(education_degree_id) ON DELETE CASCADE,
-FOREIGN KEY(division_id) REFERENCES division(division_id) ON DELETE CASCADE,
-FOREIGN KEY(username) REFERENCES username(username) ON DELETE CASCADE
+CREATE TABLE employee (
+    employee_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    employee_name VARCHAR(45),
+    employee_birthday varchar(45),
+    employee_id_card VARCHAR(45),
+    employee_salary DOUBLE,
+    employee_phone VARCHAR(45),
+    employee_email VARCHAR(45),
+    employee_address VARCHAR(45),
+    position_id INT,
+    education_degree_id INT,
+    division_id INT,
+    username VARCHAR(255),
+    FOREIGN KEY (position_id)REFERENCES `position` (position_id),
+    FOREIGN KEY (education_degree_id)REFERENCES education_degree (education_degree_id),
+    FOREIGN KEY (division_id)REFERENCES division (division_id),
+    FOREIGN KEY (username)REFERENCES username (username)ON DELETE CASCADE
 );
 
-CREATE TABLE customer_type(
-customer_type_id INT NOT NULL PRIMARY KEY auto_increment,
-customer_type_name VARCHAR(450)
+select * from employee where employee_name like '%%' and employee_address like '%%';
+
+insert into employee
+(employee_name, employee_birthday, employee_id_card, employee_salary, employee_phone, employee_email, employee_address, position_id, education_degree_id, division_id,username)
+values ('Nguyễn Văn An', '1970-11-07', '456231786', 10000000, '0901234121', 'annguyen@gmail.com',
+        '295 Nguyễn Tất Thành, Đà Nẵng', 1, 3, 1 ,'name1'),
+       ('Lê Văn Bình', '1997-04-09', '654231234', 7000000, '0934212314', 'binhlv@gmail.com', '22 Yên Bái, Đà Nẵng', 1,
+        2, 2 ,'name2'),
+       ('Hồ Thị Yến', '1995-12-12', '999231723', 14000000, '0412352315', 'thiyen@gmail.com',
+        'K234/11 Điện Biên Phủ, Gia Lai', 1, 3, 2,'name3'),
+       ('Võ Công Toản', '1980-04-04', '123231365', 17000000, '0374443232', 'toan0404@gmail.com',
+        '77 Hoàng Diệu, Quảng Trị', 1, 4, 4,'name4'),
+       ('Nguyễn Bỉnh Phát', '1999-12-09', '454363232', 6000000, '0902341231', 'phatphat@gmail.com',
+        '43 Yên Bái, Đà Nẵng', 2, 1, 1,'name5'),
+       ('Khúc Nguyễn An Nghi', '2000-11-08', '964542311', 7000000, '0978653213', 'annghi20@gmail.com',
+        '294 Nguyễn Tất Thành, Đà Nẵng', 2, 2, 3,'name6'),
+       ('Nguyễn Hữu Hà', '1993-01-01', '534323231', 8000000, '0941234553', 'nhh0101@gmail.com',
+        '4 Nguyễn Chí Thanh, Huế', 2, 3, 2,'name7'),
+       ('Nguyễn Hà Đông', '1989-09-03', '234414123', 9000000, '0642123111', 'donghanguyen@gmail.com',
+        '111 Hùng Vương, Hà Nội', 2, 4, 4 ,'name8'),
+       ('Tòng Hoang', '1982-09-03', '256781231', 6000000, '0245144444', 'hoangtong@gmail.com', '213 Hàm Nghi, Đà Nẵng',
+        2, 4, 4,'name9'),
+       ('Nguyễn Công Đạo', '1994-01-08', '755434343', 8000000, '0988767111', 'nguyencongdao12@gmail.com',
+        '6 Hoà Khánh, Đồng Nai', 2, 3, 2,'name10');
+
+
+CREATE TABLE customer_type (
+    customer_type_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    customer_type_name VARCHAR(450)
 );
 
-CREATE TABLE customer(
-customer_id varchar(100) NOT NULL PRIMARY KEY,
-customer_type_id int,
-customer_name VARCHAR(100),
-customer_birthday VARCHAR(100),
-customer_gender VARCHAR(100),
-customer_id_card VARCHAR(100),
-customer_phone VARCHAR(100),
-customer_email VARCHAR(100),
-customer_address VARCHAR(100)
+CREATE TABLE customer (
+    customer_id VARCHAR(100) NOT NULL PRIMARY KEY,
+    customer_type_id INT,
+    customer_name VARCHAR(100),
+    customer_birthday VARCHAR(100),
+    customer_gender VARCHAR(100),
+    customer_id_card VARCHAR(100),
+    customer_phone VARCHAR(100),
+    customer_email VARCHAR(100),
+    customer_address VARCHAR(100)
 );
 
 insert into customer
@@ -197,22 +242,9 @@ FOREIGN KEY(contract_id) REFERENCES contract(contract_id) ON DELETE CASCADE
 );
 
 use furama;
-insert into position
-(position_name)
-values ('Quản lý'),
-       ('Nhân viên');
-insert into education_degree
-(education_degree_name)
-values ('Trung Cấp'),
-       ('Cao Đẳng'),
-       ('Đại Học'),
-       ('Sau Đại Học');
-insert into division
-(division_name)
-values ('Sale-Marketing'),
-       ('Hành chính'),
-       ('Phục vụ'),
-       ('Quản lý');
+
+
+
 insert into customer_type
 (customer_type_name)
 values ('Diamond'),
@@ -221,29 +253,6 @@ values ('Diamond'),
        ('Silver'),
        ('Member');
 
-
-insert into employee
-(employee_name, employee_birthday, employee_id_card, employee_salary, employee_phone, employee_email, employee_address, position_id, education_degree_id, division_id,username)
-values ('Nguyễn Văn An', '1970-11-07', '456231786', 10000000, '0901234121', 'annguyen@gmail.com',
-        '295 Nguyễn Tất Thành, Đà Nẵng', 1, 3, 1),
-       ('Lê Văn Bình', '1997-04-09', '654231234', 7000000, '0934212314', 'binhlv@gmail.com', '22 Yên Bái, Đà Nẵng', 1,
-        2, 2),
-       ('Hồ Thị Yến', '1995-12-12', '999231723', 14000000, '0412352315', 'thiyen@gmail.com',
-        'K234/11 Điện Biên Phủ, Gia Lai', 1, 3, 2),
-       ('Võ Công Toản', '1980-04-04', '123231365', 17000000, '0374443232', 'toan0404@gmail.com',
-        '77 Hoàng Diệu, Quảng Trị', 1, 4, 4),
-       ('Nguyễn Bỉnh Phát', '1999-12-09', '454363232', 6000000, '0902341231', 'phatphat@gmail.com',
-        '43 Yên Bái, Đà Nẵng', 2, 1, 1),
-       ('Khúc Nguyễn An Nghi', '2000-11-08', '964542311', 7000000, '0978653213', 'annghi20@gmail.com',
-        '294 Nguyễn Tất Thành, Đà Nẵng', 2, 2, 3),
-       ('Nguyễn Hữu Hà', '1993-01-01', '534323231', 8000000, '0941234553', 'nhh0101@gmail.com',
-        '4 Nguyễn Chí Thanh, Huế', 2, 3, 2),
-       ('Nguyễn Hà Đông', '1989-09-03', '234414123', 9000000, '0642123111', 'donghanguyen@gmail.com',
-        '111 Hùng Vương, Hà Nội', 2, 4, 4),
-       ('Tòng Hoang', '1982-09-03', '256781231', 6000000, '0245144444', 'hoangtong@gmail.com', '213 Hàm Nghi, Đà Nẵng',
-        2, 4, 4),
-       ('Nguyễn Công Đạo', '1994-01-08', '755434343', 8000000, '0988767111', 'nguyencongdao12@gmail.com',
-        '6 Hoà Khánh, Đồng Nai', 2, 3, 2);
 
 
 insert into contract

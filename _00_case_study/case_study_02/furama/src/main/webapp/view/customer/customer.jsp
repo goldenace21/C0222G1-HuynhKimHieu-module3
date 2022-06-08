@@ -11,14 +11,46 @@
 <html>
 <head>
     <title>Customer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="https://furamavietnam.com/wp-content/uploads/2018/07/favicon.png">
+<%--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"--%>
+<%--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">--%>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/boostsrap-exam/bootstrap413/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/boostsrap-exam/datatables/css/dataTables.bootstrap4.min.css">
+
     <link rel="stylesheet" href="${pageContext.request.contextPath}/view/stylesheet.css">
+
+
 </head>
 <body>
 <div class="container-fluid px-0">
     <%@include file="/view/header.jsp" %>
-    <div class="col-lg-10 my-5 mx-auto">
+    <div class="col-lg-10 my-3 mx-auto">
+        <div style="justify-content: space-between" class="row">
+            <a href="/customer?action=orderByName">
+                <button type="button" class="btn btn-secondary mx-5" data-dismiss="modal">Order by name</button>
+            </a>
+            <a href="/customer?action=create">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">create new</button>
+            </a>
+            <form action="/customer" method="get">
+                <div class="row form-group mx-5 ">
+                    <div class="">
+                        <input type="hidden" name="action" value="search" >
+                        <input type="text" name="name" placeholder="enter name" value="${name}" class="form-control"
+                               id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class=" mx-3">
+                        <input type="text" name="address" placeholder="enter address" value="${address}"
+                               class="form-control" id="exampleInputPassword1">
+
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn btn-primary">search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
         <table class="table">
             <thead>
             <tr>
@@ -83,32 +115,7 @@
             </c:forEach>
             </tbody>
         </table>
-        <div style="justify-content: space-around" class="row">
-            <a href="/customer?action=orderByName">
-                <button type="button" class="btn btn-secondary mx-5" data-dismiss="modal">Order by name</button>
-            </a>
-            <a href="/customer?action=create">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">create new</button>
-            </a>
-            <form action="/customer" method="get">
-                <div class="row form-group mx-5 ">
-                    <div class="">
-                        <input type="hidden" name="action" value="search" >
-                        <input type="text" name="name" placeholder="enter name" value="${name}" class="form-control"
-                               id="exampleInputEmail1" aria-describedby="emailHelp">
 
-                    </div>
-                    <div class=" mx-3">
-                        <input type="text" name="address" placeholder="enter address" value="${address}"
-                               class="form-control" id="exampleInputPassword1">
-
-                    </div>
-                    <div class="">
-                        <button type="submit" class="btn btn-primary">search</button>
-                    </div>
-                </div>
-            </form>
-        </div>
     </div>
 </div>
 <%--<table border="1px">--%>
@@ -143,13 +150,16 @@
 <%--</table>--%>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<%--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"--%>
+<%--        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"--%>
+<%--        crossorigin="anonymous"></script>--%>
+<%--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"--%>
+<%--        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"--%>
+<%--        crossorigin="anonymous"></script>--%>
+<%--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"--%>
+<%--        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"--%>
+<%--        crossorigin="anonymous"></script>--%>
+<script src="webapp/boostsrap-exam/jquery/jquery-3.5.1.min.js"></script>
+<script src="webapp/boostsrap-exam/datatables/js/jquery.dataTables.min.js"></script>
+<script src="webapp/boostsrap-exam/datatables/js/dataTables.bootstrap4.min.js"></script>
 </html>

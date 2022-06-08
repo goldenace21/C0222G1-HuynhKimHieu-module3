@@ -1,8 +1,8 @@
 package controller;
 
 import model.Customer;
-import service.customer.impl.CustomerServiceImpl;
-import service.customer.interfacee.ICustomerService;
+import service.customer.CustomerServiceImpl;
+import service.customer.ICustomerService;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
