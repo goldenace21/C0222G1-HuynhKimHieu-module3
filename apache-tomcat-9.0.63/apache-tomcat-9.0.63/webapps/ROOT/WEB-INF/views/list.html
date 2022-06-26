@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/create">
+    <button>create new</button>
+</a>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Create date</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:if="${blog.deleteStatus == 0}" th:each="blog,loop : ${blogs}">
+        <td th:text="${blog.id}"></td>
+        <td th:text="${blog.title}"></td>
+        <td><a th:href="@{/content/__${blog.id}__}"><button>read</button></a></td>
+        <td th:text="${blog.dateCreate}"></td>
+        <td><a th:href="@{/update/__${blog.id}__}">
+            <button>update</button>
+        </a></td>
+        <td><a th:href="@{/delete/__${blog.id}__}">
+            <button>delete</button>
+        </a></td>
+    </tr>
+</table>
+</body>
+</html>
